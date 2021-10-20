@@ -8,6 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 import br.com.mariojp.web.demo.model.Aplicacao;
+import br.com.mariojp.web.demo.model.Cliente;
 import br.com.mariojp.web.demo.repository.AplicacaoRepository;
 
 @SpringBootApplication
@@ -32,6 +33,9 @@ public class DemoApplication {
 			
 		};
 	}
+
+	
+	
 	
 
 }
