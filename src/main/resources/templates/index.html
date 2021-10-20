@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>--Formulário Contato--</title>
+<meta charset="utf-8" />
+<!--   <link href="ContatoEstilo.css" rel="stylesheet" media="all" />
+    <script src="JavaScript1.js"></script>-->
+</head>
+
+<body>
+<form name="meu_form" action="salvarCliente">
+
+  <h1>Novo Cliente</h1>
+
+  <input type="text" id="nomeid" placeholder="Insira nome" required="required" name="nome" />
+  <label for="nome">Nome</label>
+
+  <input type="tel" id="foneid" placeholder="(xx)xx-xx-xx-xx" name="telefone" />
+  <label for="fone">Fone</label>
+
+  <input type="end" id="endid" placeholder="Insira Endereço" name="endereco" />
+  <label for="end">Endereço</label>
+
+  <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+</form>
+</body>
+</html>

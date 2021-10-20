@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Clientes</title>
+</head>
+<body>
+Lista de Clientes
+
+<table>
+  <thead>
+    <tr>
+      <th th:text="#{coluna.cliente_id}">Id</th>
+      <th th:text="#{coluna.nome}">Nome</th>
+      <th th:text="#{coluna.telefone}">Telefone</th>
+      <th th:text="#{coluna.endereco}">Endereco</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr th:each="cliente: ${listaClientes}">
+      <td th:text="${cliente.id}">Desaner</td>
+      <td th:text="${cliente.nome}"></td>
+      <td th:text="${cliente.telefone}"></td>
+      <td th:text="${cliente.endereco}"></td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
