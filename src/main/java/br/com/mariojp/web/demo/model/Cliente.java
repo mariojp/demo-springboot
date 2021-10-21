@@ -5,8 +5,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table
 public class Cliente {
 
     @Id
@@ -28,8 +30,7 @@ public class Cliente {
         // TODO Auto-generated constructor stub
     }
 
-    public Cliente(Long id, String nome, String endereco, String telefone) {
-        this.id = id;
+    public Cliente(String nome, String endereco, String telefone) {
         this.nome = nome;
         this.endereco = endereco;
         this.telefone = telefone;
