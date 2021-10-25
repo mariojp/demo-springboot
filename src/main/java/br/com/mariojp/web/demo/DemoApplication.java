@@ -8,19 +8,20 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 import br.com.mariojp.web.demo.model.Aplicacao;
+import br.com.mariojp.web.demo.model.Cliente;
 import br.com.mariojp.web.demo.repository.AplicacaoRepository;
 
 @SpringBootApplication
 public class DemoApplication {
 	
-	private static final Logger log = LoggerFactory.getLogger(DemoApplication.class);
+	//private static final Logger log = LoggerFactory.getLogger(DemoApplication.class);
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 	
 	
-	@Bean
+	/*@Bean
 	public CommandLineRunner executar(AplicacaoRepository aplicacaoRepository) {
 		return (args) -> {
 			aplicacaoRepository.save(new Aplicacao("Aplicacao 1"));
@@ -31,7 +32,10 @@ public class DemoApplication {
 			}
 			
 		};
-	}
+	}*/
+
+	
+	
 	
 
 }
