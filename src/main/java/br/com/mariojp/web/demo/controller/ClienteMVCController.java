@@ -18,13 +18,11 @@ public class ClienteMVCController {
 	@GetMapping("/listaClientes1")
 	public String listaClientes(Model model) {
 		model.addAttribute("lista", clienteRepository.findAll());
-		return "listar";
+		return "listarCliente";
 	}
 
 	@GetMapping("/salvarCliente1")		
 	public String salvarCliente(Cliente cliente) {
-		
-		
 		clienteRepository.save(cliente);
 		return "sucesso";
 	}
